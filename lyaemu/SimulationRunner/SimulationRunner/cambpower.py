@@ -7,7 +7,7 @@ import numpy as np
 import matplotlib
 matplotlib.use("PDF")
 import matplotlib.pyplot as plt
-from nbodykit.lab import BigFileCatalog,FFTPower
+#from nbodykit.lab import BigFileCatalog,FFTPower
 
 def modecount_rebin(kk, pk, modes, pkc, minmodes=250, ndesired=200):
     """Rebins a power spectrum so that there are sufficient modes in each bin"""

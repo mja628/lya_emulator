@@ -31,9 +31,9 @@ import numpy
 import configobj
 import validate
 
-from pmesh.pm import ParticleMesh
-from fastpm.core import Solver
-from nbodykit.cosmology import Cosmology, LinearPower
+#from pmesh.pm import ParticleMesh
+#from fastpm.core import Solver
+#from nbodykit.cosmology import Cosmology, LinearPower
 
 GenICconfigspec = """
 FileWithInputSpectrum = string(default='')
