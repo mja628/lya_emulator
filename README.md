@@ -36,10 +36,15 @@ Other files:
 Dependencies:
 - Python 3
 - GPy
+- emukit
 - numpy
 - scipy
 - h5py
 - matplotlib for the plots
 - cobaya for the sampling
 - fake_spectra module for generating flux power spectra from a simulation snapshot.
-- SimulationRunner (not on pip: at https://github.com/sbird/SimulationRunner) for setting up MP-Gadget simulations.
+- SimulationRunner (not on pip: at https://github.com/sbird/SimulationRunner) for setting up MP-Gadget simulations. SimulationRunner is bundled in this repository, and depends on the following (which *are* on PyPI):
+    - configobj
+    - classylss
+    - nbodykit
+    
