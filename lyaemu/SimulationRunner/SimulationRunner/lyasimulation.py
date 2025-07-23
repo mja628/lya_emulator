@@ -5,7 +5,7 @@ import os.path
 import numpy as np
 import scipy.interpolate as interp
 from . import HeII_input_file_maker as heii
-from . import make_HI_reionization_table as hi
+#from . import make_HI_reionization_table as hi
 from . import simulationics
 
 class LymanAlphaSim(simulationics.SimulationICs):

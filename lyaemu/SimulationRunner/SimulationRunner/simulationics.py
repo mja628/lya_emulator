@@ -14,7 +14,7 @@ import classylss.binding as CLASS
 from . import utils
 from . import clusters
 from . import read_uvb_tab
-from . import cambpower
+#from . import cambpower
 
 class SimulationICs:
     """
@@ -460,11 +460,11 @@ class SimulationICs:
         #Generate mpi_submit file
         self.generate_mpi_submit(genic_output)
         #Run MP-GenIC
-        if do_build:
-            subprocess.check_call([os.path.join(os.path.join(self.gadget_dir, "genic"),self.genicexe), genic_param],cwd=self.outdir)
-            zstr = self._camb_zstr(self.redshift)
-            cambpower.check_ic_power_spectra(genic_output, camb_zstr=zstr, m_nu=self.m_nu, outdir=self.outdir, accuracy=pkaccuracy)
-            self.do_gadget_build(gadget_config)
+        # if do_build:
+        #     subprocess.check_call([os.path.join(os.path.join(self.gadget_dir, "genic"),self.genicexe), genic_param],cwd=self.outdir)
+        #     zstr = self._camb_zstr(self.redshift)
+        #     cambpower.check_ic_power_spectra(genic_output, camb_zstr=zstr, m_nu=self.m_nu, outdir=self.outdir, accuracy=pkaccuracy)
+        #     self.do_gadget_build(gadget_config)
         return gadget_config
 
 def save_transfer(transfer, transferfile):
