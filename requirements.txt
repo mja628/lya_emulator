@@ -1,0 +1,15 @@
+matplotlib 
+numpy 
+scipy
+pandas
+fake_spectra 
+cobaya 
+h5py
+nose 
+configobj
+classylss
+gsl
+mpi4py
+emukit
+
+# bigfile
